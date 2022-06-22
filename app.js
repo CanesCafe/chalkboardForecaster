@@ -1,49 +1,59 @@
+const items = {
+    frappes:{
+        name:'Frappes',
+        items:["Coffee", "Mocha", "Caramel", "Java Chip", "Choc Mint", "Cookies & Cream", "Cotton Candy", "Vanilla Bean", "Vanilla Latte"]
+    },
+    smoothies:{
+        name:'Smoothies',
+        items:["Coffee", "Mocha", "Caramel", "Java Chip", "Choc Mint", "Cookies & Cream", "Cotton Candy", "Vanilla Bean", "Vanilla Latte"]
+    },
+    local:{
+        name:'Local Creations',
+        items:["Coffee", "Mocha", "Caramel", "Java Chip", "Choc Mint", "Cookies & Cream", "Cotton Candy", "Vanilla Bean", "Vanilla Latte"]
+    },
+
+}
 
 
 function onLoad() {
     // alert("Function onLoad() called");
     document.getElementById("timestamp").innerHTML = Date();
-}
-
-function frappeRNG(nameList) {
-    
-    let ranName = [];
-    let winChikDin = Math.floor(Math.random() * nameList.length);
-    
-    for (let i = 0; i < nameList.length; i++) {
-        if (i === winChikDin) {
-
-            ranName.push(nameList[i])
-    
-        }
-    
+    const buttons = document.querySelectorAll("button");
+    let modal= document.querySelector(".modal-container");
+    let content= document.querySelector(".content");
+    modal.addEventListener("click",(e)=>{
+        content.innerHTML= "";
+        modal.style.display="none";
+        
+    });
+    for(let button of buttons) {
+        button.addEventListener("click", menuRNG);
     }
-
-return ranName.join()
-
 }
 
-let frappeNames = ["Coffee", "Mocha", "Caramel", "Java Chip", "Choc Mint", "Cookies & Cream", "Cotton Candy", "Vanilla Bean", "Vanilla Latte"]
-console.log(mrPodcastRNG(frappeNames));
+function menuRNG(e) {
+   
+    let menuID = e.target.id;
+    console.log(menuID);
+    if (Object.keys(items).includes(menuID)) {
 
-function smoothiesRNG(nameList) {
-    
-  let ranName = [];
-  let winChikDin = Math.floor(Math.random() * nameList.length);
-  
-  for (let i = 0; i < nameList.length; i++) {
-      if (i === winChikDin) {
+        let nameList = items[menuID].items;
+        let winChikDin = Math.floor(Math.random() * nameList.length);
+       
+        let modal= document.querySelector(".modal-container");
+        let content= document.querySelector(".content");
+       
+     
+        // modal.style.visibility= "visible";
+        modal.style.display= "block";
+        let result=`<h3>${items[menuID].name}</h3>\n${nameList[winChikDin]}`;
+        content.innerHTML= result;
+        console.log(content);
+        // location.replace("result.html")
 
-          ranName.push(nameList[i])
-  
-      }
-  
-  }
-
-return ranName.join()
-
+    }
 }
 
-let smoothieNames = ["Coffee", "Mocha", "Caramel", "Java Chip", "Choc Mint", "Cookies & Cream", "Cotton Candy", "Vanilla Bean", "Vanilla Latte"]
-console.log(mrPodcastRNG(smoothieNames));
+
+
 

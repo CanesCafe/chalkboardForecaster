@@ -11,65 +11,44 @@
         <header class="container-fluid">
             <h1>CANE'S FORCASTER</h1>
         </header>
-        
+        <div class="modal-container">
+            <div class="bg-container">
+                <div class="content"></div>
+            </div>
+        </div>
         <div class="container-fluid">
-            <div class="row">
-                <aside class="col-sm-4">
-                    <h2 class="title">WIND CHILL FACTOR | COLD FRONT</h2>
+            <div class="d-flex justify-content-center">
+                <aside >
+                    <h2 class="title">WIND CHILL FACTOR <br> COLD FRONT</h2>
                     <div>
-                        <!-- <ul id="menuItemsButtons">
-                            <li><a href="#">FRAPPES</a></li>
-                            
-                            <li><a href="#">SMOOTHIES</a></li>
-                            
-                            <li><a href="#">LOCAL CREATIONS</a></li>
-                        </ul> -->
                         <div class="list-group">
-                          <button onclick="frappeRNG()" type="button" class="list-group-item list-group-item-action active" aria-current="true">LUCK OF THE DRAW
-                          </button>
-                          <button onclick="frappeRNG()" type="button" class="list-group-item list-group-item-action">FRAPPES</button>
-                          <button onclick="smoothiesRNG()" type="button" class="list-group-item list-group-item-action">SMOOTHIES</button>
-                          <button type="button" class="list-group-item list-group-item-action">LOCAL CREATIONS</button>
+                          <p class="list-group-item list-group-item-action active" aria-current="true">LUCK OF THE DRAW
+                          </p>
+                          <button type="button" id="frappes" class="list-group-item list-group-item-action">FRAPPES</button>
+                          <button type="button" id="smoothies" class="list-group-item list-group-item-action">SMOOTHIES</button>
+                          <button type="button" id="local" class="list-group-item list-group-item-action">LOCAL CREATIONS</button>
                         </div>
                     </div>
                 </aside>
 
-                <aside class="col-sm-4">
-                    <h2 class="title">HEAT WAVE (WIND CHILL upon request)</h2>
+                <aside >
+                    <h2 class="title">HEAT WAVE <br>(WIND CHILL upon request)</h2>
                     <div>
-                        <!-- <ul id="menuItemsButtons">
-                            <li><a href="#">COFFEE</a></li>
-                        
-                            <li><a href="#">NOT COFFEE</a></li>
-                        </ul> -->
-                        <div class="list-group">
-                          <button type="button" class="list-group-item list-group-item-action active" aria-current="true">DEALER'S CHOICE!</button>
+                         <div class="list-group">
+                          <p class="list-group-item list-group-item-action active" aria-current="true">DEALER'S CHOICE!</p>
                           <button type="button" class="list-group-item list-group-item-action">COFFEE</button>
                           <button type="button" class="list-group-item list-group-item-action">NOT COFFEE</button>
                         </div>
                     </div>
                 </aside>
                         
-                <aside class="col-sm-4">
+                <aside >
                     <h2 class="title">TASTY COMESTIBLES</h2>
                     <div>
-                        <!-- <ul id="menuItemsButtons">
-                            <li><a href="#">AUSSIE PIES</a></li>
-                        
-                            <li><a href="#">PRESSED PANINIS</a></li>
-                            
-                            <li><a href="#">SPRING INTO HEALTH</a></li>
-                            
-                            <li><a href="#">BAGELS</a></li>
-                            
-                            <li><a href="#">WAFFLES</a></li> 
-                            
-                            <li><a href="#">SUPERFOOD OVERNIGHT OATMEAL</a></li> 
-                        </ul> -->
                         <div class="list-group">
-                          <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+                          <p class="list-group-item list-group-item-action active" aria-current="true">
                             SURPRISE ME!!!
-                          </button>
+                          </p>
                           <button type="button" class="list-group-item list-group-item-action">AUSSIE PIES</button>
                           <button type="button" class="list-group-item list-group-item-action">PRESSED PANINIS</button>
                           <button type="button" class="list-group-item list-group-item-action">SPRING INTO HEALTH</button>
@@ -80,6 +59,7 @@
                     </div>
                 </aside>
             </div>
+           
         </div>
         <footer class="container-fluid">
             Property of Parisi's (Copyright 2022)
