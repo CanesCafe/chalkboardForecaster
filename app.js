@@ -13,11 +13,11 @@ const items = {
     },
     coffee:{
         name:'Coffee',
-        items:["Cappucino", "Cafe Latte", "Chai Latte", "Espresso", "Doppio", "Caramel Macchiato", "Mocha", "Americano", "Fresh Brew", "Cold Brew", "Iced Cafe Latte", "Iced Mocha", "Keto Kickstart"]
+        items:["Cappucino", "Cafe Latte", "Espresso", "Doppio", "Caramel Macchiato", "Mocha", "Americano", "Fresh Brew", "Cold Brew", "Iced Cafe Latte", "Iced Mocha", "Keto Kickstart"]
     },
     noncoffee:{
         name:'Tea',
-        items:["Iced Tea", "Iced Thai Tea", "Shaken Iced Green", "Lemonade Brewed Tea", "Raspberry Brewed Tea", "Peach Brewed Tea", "Mango Brewed Tea", "Mandarin Orange Brewed Tea", "Strawberry", "Hot Tea", "Hot Chocolate"]
+        items:["Iced Tea", "Iced Thai Tea", "Chai Latte", "Shaken Iced Green", "Lemonade Brewed Tea", "Raspberry Brewed Tea", "Peach Brewed Tea", "Mango Brewed Tea", "Mandarin Orange Brewed Tea", "Strawberry", "Hot Tea", "Hot Chocolate"]
     },
     pies:{
         name:'Pies',
@@ -32,17 +32,17 @@ const items = {
         items:["Prime Time Toast", "Yogurt Parfait", "Vegan Overnight Oats", "Caesar Salad", "Superfood Overnight Oatmeal"]
     },
     bagels:{
-        names:'Bagels',
+        name:'Bagels',
         items:["Signature Stormy Bagel", "Bagel with Butter", "Bagel with Cream Cheese", "Egg & Cheese Bagel", "Bacon, Egg & Cheese Bagel", "Ham, Egg & Cheese Bagel", "Sausage, Egg & Cheese Bagel"]
     },
     waffles:{
-        names:'Waffles',
+        name:'Waffles',
         items:["Berry Berry Good Waffle", "The Pre-Game Waffle", "The Nutty Professor Waffle", "Ice Cream Sundae Waffle"]
     },
     superdonut:{
-        names:'Nutritious or Delicious?',
+        name:'Just Do It',
         items:["Prime Time Toast", "Caesar Salad", "Superfood Overnight Oatmeal", "Donut", "Muffin", "Croissant"]
-    },
+    }
 
 }
 
@@ -78,7 +78,7 @@ function menuRNG(e) {
      
         // modal.style.visibility= "visible";
         modal.style.display= "block";
-        let result=`<h3>${items[menuID].name}</h3>\n${nameList[winChikDin]}`;
+        let result=`<h5>${items[menuID].name}</h5>\n<h3>${nameList[winChikDin]}</h3>`;
         content.innerHTML= result;
         console.log(content);
         // location.replace("result.html")
