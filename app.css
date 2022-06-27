@@ -1,17 +1,32 @@
 header, footer {
-    background-color:#47A8BD ;
-    color: maroon;
-    padding: 20px;
+    /* background-color:#47A8BD ; */
+    /* color: maroon; */
+    
     text-align: center;
+    color: White;
 }
 
 body {
-    background-color: #546A7B;
+    background: url(images/WoodWallBackground.jpg);
+    background-position: 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
     top: 0;
+    font-family: palanquin;
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+.logo{
+    width: 350px;
 }
 
 aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     font-weight: bold;
     text-align: center;
@@ -19,10 +34,10 @@ aside {
     background-image: url(images/theblackboard_awesome2.jpg);
     background-position: 0;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 
     width:500px;
-    height: 400px;
+    height: 600px;
     margin: 20px;
     
   
@@ -35,8 +50,12 @@ aside {
     margin:auto
 }
 
-.title {
-    color:#47A8BD;
+
+button{background-color: transparent;
+color:white;
+border:0;
+font-weight: 600;
+
 }
 
 .buttons li {
@@ -66,6 +85,9 @@ aside {
     background: linear-gradient(#CC2936, black, #CC2936);
     border-radius: 10px 15px 15px 10px;
 }
+.transparent-bg{
+    background-color: rgba(255, 255, 255, 0.116);
+}
 
 li {
     text-align: left;
@@ -83,6 +105,11 @@ li {
     display: none;
      
 }
+
+.modalContent{
+    width: 100px;
+    text-align: center;
+}
 .bg-container{
     position:relative;
     top: 30%;
@@ -99,9 +126,21 @@ li {
     align-items: center;
 
 }
+
 .content{
     text-align: center;
  
     color:white;
     
+}
+
+h1, h2 {
+    font-weight: 700;
+    font-size: 2em;
+    /* font-style: italic; */
+    color:white;
+
+}
+h4{
+    color: rgb(230, 224, 224);
 }

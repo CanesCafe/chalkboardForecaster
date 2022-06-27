@@ -13,11 +13,11 @@ const items = {
     },
     coffee:{
         name:'Coffee',
-        items:["Cappucino", "Cafe Latte", "Espresso", "Doppio", "Caramel Macchiato", "Mocha", "Americano", "Fresh Brew", "Cold Brew", "Iced Cafe Latte", "Iced Mocha", "Keto Kickstart"]
+        items:["Cappucino", "Cafe Latte", "Espresso", "Doppio", "Caramel Macchiato", "Mocha", "Americano", "Fresh Brew", "Cold Brew", "Iced Cafe Latte", "Iced Mocha", "Keto Kickstart", "Spiced Cherry Mocha", "Coconut White Mocha", "Lavendar Mocha", "Peppermint Mocha", "S'Mores Mocha", "Maple Butterscotch Latte", "Pumpkin Spice Latte", "Red Velvet White Mocha", "Peppermint White Mocha", "Honey Ginger Latte", "Cold Brew Lavender Latte", "Caramel Nut Spice Latte", "Caramel Apple Latte"]
     },
     noncoffee:{
         name:'Tea',
-        items:["Iced Tea", "Iced Thai Tea", "Chai Latte", "Shaken Iced Green", "Lemonade Brewed Tea", "Raspberry Brewed Tea", "Peach Brewed Tea", "Mango Brewed Tea", "Mandarin Orange Brewed Tea", "Strawberry", "Hot Tea", "Hot Chocolate"]
+        items:["Iced Tea", "Iced Thai Tea", "Chai Latte", "French Toast Latte", "Shaken Iced Green", "Lemonade Brewed Tea", "Raspberry Brewed Tea", "Peach Brewed Tea", "Mango Brewed Tea", "Mandarin Orange Brewed Tea", "Strawberry", "Hot Tea", "Hot Chocolate", "Lavendar Matcha", "Winter Chai", "Winter Chai", "Mint Chocolate Matcha", "Honey Ginger Lemonade", "Lavendar Lemonade", "Salted Butterscotch"]
     },
     pies:{
         name:'Pies',
@@ -74,7 +74,8 @@ function menuRNG(e) {
        
         let modal= document.querySelector(".modal-container");
         let content= document.querySelector(".content");
-       
+        content.classList.add("modalContent");
+
      
         // modal.style.visibility= "visible";
         modal.style.display= "block";
